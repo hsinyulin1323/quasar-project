@@ -1,0 +1,153 @@
+// app global css in SCSS form
+// Import Quasar's CSS variables
+@import 'src/css/quasar.variables.scss';
+
+// Custom Bento Box styles
+.layout {
+    display: grid;
+    background-color: $q-color-bg;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+
+    }
+
+// Box 1
+.layout .box1 {
+  background-color: $q-color-box;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2/5;
+  grid-row: 2/5;
+  border-radius: 10px;
+  margin: 10px ;
+  
+}
+
+// Box 2
+.box2 {
+  background-color: $q-color-box;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2/5;
+  grid-row: 5/13;
+  border-radius: 10px;
+  margin:10px;
+  cursor: pointer;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+
+  .hover-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $primary;
+    border-radius: 10px;
+    pointer-events: none;
+  }
+
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+
+    .selected-tag {
+      background-color: $primary;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .messy-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .tag {
+      background-color: $q-color-box;
+      padding: 5px 10px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+// Box 3
+.layout .box3 {
+  background-color: $q-color-box;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-column: 5/8;
+  grid-row: 2/7;
+  border-radius: 10px;
+  margin:10px;
+}
+.box4 {
+    background-color: $q-color-box;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-column: 5/8;
+    grid-row: 7/11;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+
+  }
+
+  .box5 {
+    background-color: $q-color-box;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-column: 5/8;
+    grid-row: 11/13;
+    border-radius: 10px;
+    margin:10px;
+    
+  }
+  
+  .box6 {
+    background-color: $q-color-box;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-column: 8/13;
+    grid-row: 2/7;
+    border-radius: 10px;
+    margin:10px;
+    
+  }
+  .layout .box7 {
+    background-color: $q-color-box;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-column: 8/13;
+    grid-row: 7/13;
+    border-radius: 10px;
+    margin:10px;
+  }
+  
+
+// Add styles for other boxes here...
