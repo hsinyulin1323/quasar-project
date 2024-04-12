@@ -1,6 +1,10 @@
 // app global css in SCSS form
 // Import Quasar's CSS variables
 @import 'src/css/quasar.variables.scss';
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&display=swap");
+
 
 // Custom Bento Box styles
 .layout {
@@ -23,7 +27,7 @@
   grid-row: 2/5;
   border-radius: 10px;
   margin: 10px ;
-  
+
 }
 
 // Box 2
@@ -124,9 +128,9 @@
     grid-row: 11/13;
     border-radius: 10px;
     margin:10px;
-    
+
   }
-  
+
   .box6 {
     background-color: $q-color-box;
     display: grid;
@@ -136,7 +140,7 @@
     grid-row: 2/7;
     border-radius: 10px;
     margin:10px;
-    
+
   }
   .layout .box7 {
     background-color: $q-color-box;
@@ -148,6 +152,6 @@
     border-radius: 10px;
     margin:10px;
   }
-  
+
 
 // Add styles for other boxes here...

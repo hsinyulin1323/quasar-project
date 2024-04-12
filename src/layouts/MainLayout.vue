@@ -3,18 +3,21 @@
 
     <q-header elevated class="bg-primary text-white" height-hint="98">
       <q-toolbar>
-        <q-toolbar-title align="left">
-          <q-avatar><img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg"></q-avatar >
-          TuneQuest
-        </q-toolbar-title>
+        <div class="flex-container">
+          <q-toolbar-title align="left">
+            <router-link to="/home">
+              <q-avatar><img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg"></q-avatar >
+            </router-link>
+            TuneQuest
+          </q-toolbar-title>
+            <q-tabs align="right">
+              <q-route-tab to="/" label="生成" />
+              <q-route-tab to="/page1" label="搜尋" />
+              <q-route-tab to="/page2" label="上傳" />
+              <q-route-tab to="/page3" label="登入" />
+            </q-tabs>
+          </div>
       </q-toolbar>
-      <q-tabs align="left">
-        <q-route-tab  to="/login" label="Login" />
-        <q-route-tab to="/page1" label="Features" />
-        <q-route-tab to="/page2" label="Pricing" />
-        <q-route-tab to="/page3" label="FAQ" />
-        <q-route-tab to="/help" label="Help" />
-      </q-tabs>
     </q-header>
 
     <q-page-container>
@@ -44,7 +47,7 @@
         <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
-    
+
     <q-drawer
       v-model="leftDrawerOpen"
       show-if-above
@@ -64,7 +67,7 @@
         />
       </q-list>
     </q-drawer>
-    
+
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -135,7 +138,15 @@ function toggleLeftDrawer () {
 
 <style scoped>
 .page-container {
-  padding-top: 20px; /* 调整顶部间隙 */
-  padding-left: 20px; /* 调整左边栏间隙 */
+  padding-top: 20px; /* 調整頂部間隙 */
+  padding-left: 20px; /* 調整左邊欄間隙 */
 }
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 95%;
+}
+
 </style>
